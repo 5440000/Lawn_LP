@@ -1,0 +1,781 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  cursor: default;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  color: #fff;
+}
+
+.header {
+  background-color: #1e3c00;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  width: 80px;
+  margin: 10px;
+  margin-right: 132px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu-title {
+  font-size: 20px;
+  color: white;
+}
+.menu-phone_number {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu-phone_number :hover {
+  transform: scale(2);
+  color: orange;
+}
+
+.fa-phone-volume {
+  margin-right: 10px;
+  font-size: 20px;
+}
+/*  Первый блок */
+.container {
+  width: 100%;
+  margin: auto;
+  margin: 0 auto;
+}
+.main {
+  height: calc(100vh - 100px);
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  width: 100%;
+  background-image: url("./img/Lawn-bcg.jpg");
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  align-items: center;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  width: 100%;
+}
+.company-name {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  font-weight: 600;
+}
+.main_title {
+  font-size: 68px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+.main-subtitle {
+  margin-bottom: 74px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* второй блок */
+.second_window {
+  width: 100%;
+  color: #1e3c00;
+}
+
+.our_projects,
+.partners,
+.additional_works {
+  width: 100%;
+  color: #1e3c00;
+}
+
+.calculator {
+  width: 100%;
+  color: #1e3c00;
+}
+
+.our_projects {
+  height: 100%;
+}
+
+.how_it_work {
+  align-items: center;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+.how_it_work__title {
+  color: #1e3c00;
+  font-size: 68px;
+
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.pointers {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-around;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.pointer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 20px;
+}
+.pointer__image1,
+.pointer__image2,
+.pointer__image3,
+.pointer__image4 {
+  border: 4px solid #449629;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  background-position: center;
+}
+.pointer__image1 {
+  background-image: url("./img/image1.webp");
+}
+
+.pointer__image2 {
+  background-image: url("./img/image2.webp");
+}
+.pointer__image3 {
+  background-image: url("./img/image3.webp");
+}
+.pointer__image4 {
+  background-image: url("./img/image4.webp");
+}
+
+.pointer__title {
+  font-size: 23px;
+  font-weight: 600;
+  color: #1e3c00;
+}
+.pointer__subtitle {
+  line-height: 1.55;
+  color: #1e3c00;
+  margin-bottom: 100px;
+}
+
+.how_it_work__button {
+  text-align: center;
+}
+.how_it_work__button__pink {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #7e296d;
+}
+
+/* третий блок our_projects */
+
+.our_projects__wrapper {
+  display: flex;
+  padding: 0 20px 20px 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.big_picture,
+.big_picture2 {
+  width: 66%;
+  background-image: url("./img/big1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(50vh - 80px);
+  margin-right: 10px;
+}
+.little_picture,
+.little_picture2 {
+  width: 33%;
+  background-image: url("./img/little1-1.jpg");
+  height: calc(50vh - 80px);
+  margin-left: 10px;
+}
+.big_picture2 {
+  background-image: url("./img/big2.jpg");
+  margin: 0 0 0 10px;
+}
+.little_picture2 {
+  background-image: url("./img/little1.jpg");
+  margin: 0 10px 0 0;
+}
+
+.title2 {
+  margin-bottom: 100px;
+}
+
+.big_picture,
+.big_picture2,
+.little_picture,
+.little_picture2 {
+  background-size: cover;
+}
+
+.our_projects {
+  margin-bottom: 100px;
+}
+
+/* Секция 3 Калькулятор */
+
+.calculator {
+  padding-top: 1px;
+  background-color: #f7f7f7;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.calculator_wrapper {
+  border-radius: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  background-color: #fff;
+  box-shadow: 0px 0px 9px 1px rgb(163 163 163);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title3 {
+  background-color: #449629;
+  margin: 18px 57px 15px;
+  color: white;
+  font-size: 65px;
+}
+
+.calculator_form {
+  margin: 0 57px;
+  padding: 25px 0;
+}
+.field1,
+.field2,
+.field3 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.field2 {
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+
+.calculator_form__title,
+.calculator_form__title2 {
+  display: block;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.field3 {
+  margin-top: 30px;
+}
+.input_square {
+  display: block;
+  border-bottom: 1px solid #1e3c00;
+
+  width: 200px;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.calculator_wrapper__title,
+.calculator_header__title {
+  display: flex;
+  background-color: #449629;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.calculator_header__title {
+  font-style: 68px;
+  margin-bottom: 18px;
+  margin-top: 15px;
+}
+.calculator_icon {
+  background-image: url("./img/");
+}
+
+.grey {
+  color: #757575;
+}
+
+.mb_10px {
+  margin-top: 5px;
+}
+
+.calculator_header {
+  background-color: #449629;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: white;
+  font-size: 65px;
+  padding-left: 57px;
+}
+
+.posev,
+.rulon {
+  cursor: pointer;
+}
+
+.choose {
+  color: #1e3c00;
+  text-decoration: underline;
+}
+
+/* БЛОК ПАРТНЕРЫ */
+.partners_wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  height: calc(100vh - 100px);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.logo_partners1,
+.logo_partners2,
+.logo_partners3,
+.logo_partners4,
+.logo_partners5,
+.logo_partners6,
+.logo_partners7,
+.logo_partners8,
+.logo_partners9 {
+  border: #1e3c00 solid 1px;
+  border-style: dotted;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo_partners1 {
+  background-image: url("./img/logos_partners/gardena-logo.png");
+}
+
+.logo_partners2 {
+  background-image: url("./img/logos_partners/husqvarna.png");
+  background-color: #f6f6f6;
+}
+
+.logo_partners3 {
+  background-image: url("./img/logos_partners/DLF_\(seed_company\)_logo.jpeg");
+}
+
+.logo_partners4 {
+  background-image: url("./img/logos_partners/rainbird-logo.jpeg");
+  background-color: #378852;
+}
+
+.logo_partners5 {
+  background-image: url("./img/logos_partners/Red-klen.jpeg");
+  background-size: contain;
+  background-color: #ee3e30;
+}
+
+.logo_partners6 {
+  background-image: url("./img/logos_partners/Stihl.png");
+  background-color: #ef7b32;
+}
+
+.logo_partners7 {
+  background-image: url("./img/logos_partners/hunter.png");
+}
+
+.logo_partners8 {
+  background-image: url("./img/logos_partners/vmeste.png");
+  background-size: auto;
+}
+
+.logo_partners9 {
+  background-image: url("./img/logos_partners/English_Lawn.png");
+  background-color: #58811b;
+}
+
+.title4,
+.title5 {
+  margin: 85px auto;
+}
+
+/* ADDITIONAL WORKS */
+
+.additional_works__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  place-items: start;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.additional_work {
+  min-width: 375px;
+  height: 595px;
+  border: 4px solid #1e3c00;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.additional_work__title {
+  color: #1e3c00;
+  font-size: 32px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-weight: 550;
+  border-bottom: 4px solid #1e3c00;
+}
+
+.additional_work__title_footer {
+  color: #fff;
+  font-size: 39px;
+  text-align: center;
+  background-color: #449629;
+  padding: 19px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-weight: 550;
+}
+
+.cut_grass {
+  background-image: url("./img/pokos-1.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.him_propolka {
+  background-image: url("./img/him_propolka.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skarifikacija {
+  background-image: url("./img/skarifikacija.webp");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.vnesenie_udobrenia {
+  background-image: url("./img/Снимок\ экрана\ 2022-07-24\ в\ 15.34.48.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-title {
+    display: none;
+  }
+  .menu-phone_number {
+    font-size: 30px;
+  }
+
+  .calculator {
+    padding: 0;
+  }
+  .title3,
+  .calculator_header__title {
+    font-size: 45px;
+  }
+
+  .calculator_form__title,
+  .calculator_form__title2 {
+    font-size: 30px;
+  }
+
+  .input_square {
+    font-size: 25px;
+  }
+  .field1,
+  .field2,
+  .field3 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .calculator_form {
+    margin: 0 20px;
+  }
+  .input_square {
+    width: 150px;
+  }
+  .title3,
+  .calculator_header__title {
+    font-size: 35px;
+  }
+  .calculator_form__title,
+  .calculator_form__title2 {
+    font-size: 25px;
+  }
+
+  .input_square {
+    font-size: 20px;
+  }
+  .menu-phone_number {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .calculator_form {
+    margin: 0 20px;
+  }
+  .input_square {
+    width: 150px;
+  }
+  .title3,
+  .calculator_header__title {
+    font-size: 28px;
+  }
+  .calculator_form__title,
+  .calculator_form__title2 {
+    font-size: 19px;
+  }
+  .calculator_header,
+  .title3 {
+    font-size: 28px;
+    padding-left: 21px;
+    margin-left: 0;
+  }
+  .title3 {
+    margin: 15px 15px 15px 0;
+    padding-left: 21px;
+    background: none;
+  }
+
+  .menu-phone_number {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu-title {
+    display: none;
+  }
+  .main_title {
+    font-size: 40px;
+    margin: -20px 25px 25px;
+  }
+  .additional_work {
+    margin: 10px 10px;
+  }
+  .pointers {
+    flex-direction: column;
+  }
+  .company-name {
+    margin-top: -55px;
+  }
+  .logo {
+    margin: 0;
+  }
+  .menu-phone_number {
+    margin-right: 10px;
+  }
+  .how_it_work__title {
+    font-size: 40px;
+    margin: 25px 25px 40px;
+  }
+  .pointer__subtitle {
+    margin-bottom: 50px;
+  }
+
+  .title2 {
+    margin-bottom: 50px;
+  }
+  .our_projects__wrapper {
+    padding: 5px 10px;
+  }
+  .big_picture,
+  .big_picture2 {
+    margin: 0;
+  }
+  .pointer_subtitle {
+    margin: 0;
+  }
+  .our_projects {
+    margin-bottom: 60px;
+  }
+  .header {
+    height: 80px;
+  }
+  .main-content {
+    height: calc(100vh - 80px);
+  }
+  .main {
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+  }
+
+  .additional_works,
+  .our_projects {
+    height: auto;
+  }
+  .title1,
+  .title4,
+  .title5,
+  .how_it_work__title,
+  .title2 {
+    margin: 40px auto;
+    font-weight: 600;
+  }
+  .pointer__title {
+    margin-bottom: 8px;
+  }
+  .additional_works {
+    justify-content: center;
+  }
+
+  .calculator_form__title,
+  .calculator_form__title2 {
+    font-size: 16px;
+  }
+  .calculator_form {
+    margin: 0 10px;
+  }
+
+  .title3 {
+    font-size: 26px;
+    padding-left: 21px;
+    margin-left: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
