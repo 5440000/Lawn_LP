@@ -1,6 +1,3 @@
-
-
-
 let cost = 0;
 const placeForCost = document.getElementById("sum");
 const range = document.getElementById("km");
@@ -12,15 +9,12 @@ const rulonnik = document.getElementById("rulonnik");
 function typeOfLawn() {
   if (range.value >= 30 && range.value <= 200) {
     cost = 1.1 * square.value * price;
-    console.log("here1");
   }
   if (range.value <= 30) {
     cost = 1.0 * square.value * price;
-    console.log("here2");
   }
   if (range.value > 200) {
     cost = 2 * square.value * price;
-    console.log("here3");
   }
   placeForCost.innerHTML = `Стоимость работ: ${Math.ceil(cost)} руб.`;
 }
@@ -39,4 +33,13 @@ rulonnik.addEventListener("click", () => {
   posev.classList.remove("choose");
   price = 10.5;
   typeOfLawn(price);
+});
+
+
+$('.one-time').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
 });
