@@ -36,10 +36,20 @@ rulonnik.addEventListener("click", () => {
 });
 
 
-$('.one-time').slick({
+$('.your-class').slick({
   dots: true,
   infinite: true,
-  speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+	autoplay:true,
+	speed:1000,
+	autoplaySpeed:1000,
+  responsive:[
+    {
+      breakpoint: 375,
+      settings: {
+        arrows:false
+      }
+    }
+  ]
 });

@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -78,6 +81,8 @@ h6 {
 }
 /*--------------------*/
 
+
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -92,6 +97,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10;
 }
 
 .logo {
@@ -127,7 +133,7 @@ body {
   margin-right: 10px;
   font-size: 20px;
 }
-/*  First Block */
+/*  Первый блок */
 .container {
   width: 100%;
   margin: auto;
@@ -139,7 +145,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
 
   width: 100%;
   background-image: url("./img/Lawn-bcg.jpg");
@@ -180,11 +185,9 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
-/* second block */
+/* второй блок */
 .second_window {
   width: 100%;
   color: #1e3c00;
@@ -288,27 +291,58 @@ body {
   background-color: #7e296d;
 }
 
-/* 3rd block */
+/* третий блок our_projects */
 
 .our_projects__wrapper {
-  display: flex;
-  padding: 0 20px 20px 20px;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.your-class {
+  margin: 0 10%;
+    max-width: 1920px;
+    
+}
+.slider .slick-arrow.slick-prev {
+  background: url("./img/l.png");
+  left: 30px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #1e3c00;
+    -webkit-font-smoothing: antialiased;}
+
+.slider .slick-arrow.slick-next {
+  background: url("./img/r.png");
+}
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slick-dots{
+  position: relative;
 }
 .big_picture,
 .big_picture2,
 .big_picture3 ,
 .big_picture4
 {
-  width: 90%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: calc(50vh - 80px);
-  /* background-size: cover; */
+  border-radius: 50px;
+  
 }
-
 .big_picture {
   background-image: url("./img/big1.jpg");
 }
@@ -318,6 +352,10 @@ body {
 }
 
 .big_picture3 {
+  background-image: url("./img/big3.jpg");
+}
+
+.big_picture4 {
   background-image: url("./img/big4.png");
 }
 
@@ -329,7 +367,7 @@ body {
   margin-bottom: 100px;
 }
 
-/* Calculator */
+/* Секция 3 Калькулятор */
 
 .calculator {
   padding-top: 1px;
@@ -438,15 +476,16 @@ body {
   text-decoration: underline;
 }
 
-/* partners */
+/* БЛОК ПАРТНЕРЫ */
+
 .partners_wrapper {
   max-width: 1920px;
   margin: 0 auto;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(5, 1fr);
-  height: calc(100vh - 100px);
-  row-gap: 20px;
+
+  row-gap: 50px;
   column-gap: 20px;
 }
 
@@ -458,16 +497,16 @@ body {
 .logo_partners6,
 .logo_partners7,
 .logo_partners8,
-.logo_partners9 {
+.logo_partners9,
+.logo_partners10 {
   border: #1e3c00 solid 1px;
-  border-radius: 50%;
   border-style: dotted;
-  width: 300px;
-  height: 300px;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 10px;
 }
 
 .logo_partners1 {
@@ -513,6 +552,12 @@ body {
   background-color: #58811b;
 }
 
+.logo_partners10 {
+  background-image: url("./img/logos_partners/mts.png");
+  background-color: #ee3e30;
+  padding: 20px;
+}
+
 .title4,
 .title5 {
   margin: 85px auto;
@@ -555,7 +600,7 @@ body {
 
 .additional_work__title_footer {
   color: #fff;
-  font-size: 35px;
+  font-size: 39px;
   text-align: center;
   background-color: #449629;
   padding: 19px;
@@ -591,21 +636,6 @@ body {
   background-repeat: repeat-x;
   background-position: center;
 }
-.logo_partners1,
-.logo_partners2,
-.logo_partners3,
-.logo_partners4,
-.logo_partners5,
-.logo_partners6,
-.logo_partners7,
-.logo_partners8,
-.logo_partners9 {
-  height: 210px;
-  width: 210px;
-}
-.partners_wrapper {
-  margin: 0 15px;
-}
 
 @media screen and (max-width: 1200px) {
   .menu-title {
@@ -635,6 +665,9 @@ body {
   .field2,
   .field3 {
     margin-right: 0;
+  }
+  .partners_wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -668,12 +701,10 @@ body {
   .logo_partners6,
   .logo_partners7,
   .logo_partners8,
-  .logo_partners9 {
-    height: 180px;
-    width: 180px;
-  }
-  .partners_wrapper {
-    margin: 0 15px;
+  .logo_partners9,
+  .logo_partners10 {
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -715,14 +746,11 @@ body {
   .logo_partners6,
   .logo_partners7,
   .logo_partners8,
-  .logo_partners9 {
-    height: 110px;
-    width: 110px;
+  .logo_partners9,
+  .logo_partners10 {
+    width: 120px;
+    height: 120px;
   }
-  .partners_wrapper {
-    margin: 0 15px;
-  }
-}
 }
 
 @media screen and (max-width: 500px) {
@@ -763,7 +791,9 @@ body {
     padding: 5px 10px;
   }
   .big_picture,
-  .big_picture2 {
+  .big_picture2,
+  .big_picture4,
+  .big_picture3 {
     margin: 0;
   }
   .pointer_subtitle {
@@ -774,6 +804,7 @@ body {
   }
   .header {
     height: 80px;
+    
   }
   .main-content {
     height: calc(100vh - 80px);
@@ -818,7 +849,6 @@ body {
     margin-bottom: 15px;
     margin-top: 15px;
   }
-
   .logo_partners1,
   .logo_partners2,
   .logo_partners3,
@@ -827,11 +857,72 @@ body {
   .logo_partners6,
   .logo_partners7,
   .logo_partners8,
-  .logo_partners9 {
-    height: 90px;
+  .logo_partners9,
+  .logo_partners10 {
     width: 90px;
+    height: 90px;
   }
+  .menu {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .additional_work {
+    min-width: 280px;
+    height: 460px;
+    border: 4px solid #1e3c00;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 10px;
+  }
+  .title5 {
+    font-size: 30px;
+  }
+  .additional_work {
+    height: 460px;
+  }
+
+  .additional_work__title_footer {
+    font-size: 28px;
+  }
+
+  .additional_work__title {
+    font-size: 26px;
+  }
+
   .partners_wrapper {
-    margin: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10px;
+  }
+  .title3 {
+    padding-left: 0;
+  }
+  .menu-phone_number {
+    font-size: 19px;
+  }
+  .calculator_subtitle {
+    font-size: 10px;
+  }
+  .field1,
+  .field2 {
+    align-items: end;
+    justify-content: space-between;
+  }
+  .input_square {
+    width: 120px;
+  }
+  .mini_title {
+    width: 57px;
+  }
+
+  .logo-partners8 {
+    background-size: contain;
+  }
+  .your-class {
+    margin: 0;
+      max-width: 1920px;
+      
   }
 }
