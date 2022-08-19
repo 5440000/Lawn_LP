@@ -46,7 +46,7 @@ $('.your-class').slick({
 	autoplaySpeed:1000,
   responsive:[
     {
-      breakpoint: 375,
+      breakpoint: 500,
       settings: {
         arrows:false
       }
