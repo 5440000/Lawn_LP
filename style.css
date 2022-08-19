@@ -297,7 +297,7 @@ body {
 }
 
 .your-class {
-  margin: 0 10%;
+  margin: 0 auto;
   max-width: 1920px;
 }
 .slider .slick-arrow.slick-prev {
@@ -634,6 +634,13 @@ body {
   background-position: center;
 }
 
+.avtopoliv{
+  background-image: url("./img/avtopoliv.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
 /* REGISTRATION DATA */
 .registration {
   display: flex;
@@ -641,6 +648,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
+  padding-bottom: 50px;
 }
 .registration_title, .insta_title {
 
