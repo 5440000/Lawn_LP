@@ -99,7 +99,7 @@ body {
 }
 
 .logo {
-  width: 80px;
+  width: 50px;
   margin: 10px;
   margin-right: 132px;
 }
@@ -139,7 +139,7 @@ body {
 }
 .main {
   height: calc(100vh - 100px);
-  margin-top: 100px;
+  margin-top: 70px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -394,7 +394,7 @@ body {
   border-radius: 30px;
   max-width: 1000px;
   margin: 0 auto;
-
+  overflow: hidden;
   background-color: #fff;
   box-shadow: 0px 0px 9px 1px rgb(163 163 163);
   display: flex;
@@ -406,12 +406,12 @@ body {
   background-color: #449629;
   margin: 18px 57px 15px;
   color: white;
-  font-size: 65px;
+  font-size: 40px;
 }
 
 .calculator_form {
   margin: 0 57px;
-  padding: 25px 0;
+  padding: 0 0 15px;
 }
 .field1,
 .field2,
@@ -422,19 +422,19 @@ body {
 }
 
 .field2 {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   margin-top: 20px;
 }
 
 .calculator_form__title,
 .calculator_form__title2 {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   margin-right: 10px;
 }
 
 .field3 {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .input_square {
   display: block;
@@ -449,17 +449,11 @@ body {
 .calculator_header__title {
   display: flex;
   background-color: #449629;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
 }
-
 .calculator_header__title {
-  font-style: 68px;
+  font-size: 40px;
   margin-bottom: 18px;
   margin-top: 15px;
-}
-.calculator_icon {
-  background-image: url("./img/");
 }
 
 .grey {
@@ -496,8 +490,7 @@ body {
   margin: 0 auto 50px;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(5, 1fr);
-
+  grid-template-columns: repeat(10, 1fr);
   row-gap: 50px;
   column-gap: 20px;
 }
@@ -514,14 +507,17 @@ body {
 .logo_partners10 {
   border: #1e3c00 solid 1px;
   border-style: dotted;
-  width: 210px;
-  height: 210px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.logo-partners8 {
+  background-size: contain;
+}
 .logo_partners1 {
   background-image: url("./img/logos_partners/gardena-logo.png");
 }
@@ -557,7 +553,6 @@ body {
 
 .logo_partners8 {
   background-image: url("./img/logos_partners/vmeste.png");
-  background-size: auto;
 }
 
 .logo_partners9 {
@@ -589,6 +584,7 @@ body {
 }
 
 .additional_work {
+  transform: scale(0.75);
   min-width: 340px;
   height: 550px;
   border: 4px solid #1e3c00;
@@ -703,6 +699,44 @@ body {
   transform: scale(1.1);
 }
 
+.lawn_price {
+  width: 100%;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+.posevnoi,
+.rulonny {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.posevnoi_img,
+.rulonny_img {
+  background-image: url("./img/Посевной.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 15px;
+
+}
+
+.rulonny_img {
+  background-image: url("./img/rulonnyj-gazon.jpeg");
+}
+.posevnoi_title,
+.rulonny_title {
+  color: #1e3c00;
+  font-size: 43px;
+  margin: 15px;
+  text-align: center;
+}
+.horisontal-line{
+  border-bottom: solid 2px #378852;
+  width: 100%;
+}
 @media screen and (max-width: 1200px) {
   .menu-title {
     display: none;
@@ -733,11 +767,15 @@ body {
     margin-right: 0;
   }
   .partners_wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media screen and (max-width: 800px) {
+  .posevnoi,
+  .rulonny {
+    flex-direction: column;
+  }
   .calculator_form {
     margin: 0 20px;
   }
@@ -771,6 +809,10 @@ body {
   .logo_partners10 {
     width: 160px;
     height: 160px;
+  }
+
+  .partners_wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -817,9 +859,23 @@ body {
     width: 120px;
     height: 120px;
   }
+  .partners_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .posevnoi_title,
+.rulonny_title  {
+  font-size: 30px;
+}
+  .your-class .slick-slide {
+    height: 70vh;
+    margin: 12px;
+  }
+  .partners_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .menu-title {
     display: none;
   }
@@ -837,7 +893,8 @@ body {
     margin-top: -55px;
   }
   .logo {
-    margin: 0;
+    width: 60px;
+    margin: 5px;
   }
   .menu-phone_number {
     margin-right: 10px;
@@ -937,6 +994,10 @@ body {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .rulonny {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 375px) {
   .additional_work {
@@ -965,7 +1026,7 @@ body {
   }
 
   .partners_wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 10px;
   }
   .title3 {
